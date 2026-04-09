@@ -1,5 +1,4 @@
 import { Outlet } from 'react-router';
-
 import Footer from '@/layouts/Footer';
 
 const PublicLayout = () => (

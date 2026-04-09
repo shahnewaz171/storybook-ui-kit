@@ -1,10 +1,8 @@
-import { memo, type DetailedHTMLProps, type InputHTMLAttributes } from 'react';
+import { type DetailedHTMLProps, type InputHTMLAttributes, memo } from 'react';
 import { cn } from '@/utils';
 
-interface InputProps extends DetailedHTMLProps<
-  InputHTMLAttributes<HTMLInputElement>,
-  HTMLInputElement
-> {
+interface InputProps
+  extends DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement> {
   label?: string;
   name: string;
   value: string;

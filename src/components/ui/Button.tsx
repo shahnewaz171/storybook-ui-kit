@@ -9,10 +9,8 @@ const variantClasses = {
 const baseClasses =
   'inline-flex items-center justify-center px-4 py-2 rounded text-white font-semibold transition';
 
-interface ButtonProps extends DetailedHTMLProps<
-  ButtonHTMLAttributes<HTMLButtonElement>,
-  HTMLButtonElement
-> {
+interface ButtonProps
+  extends DetailedHTMLProps<ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement> {
   children: ReactNode;
   type?: 'button' | 'submit' | 'reset';
   variant?: keyof typeof variantClasses;
