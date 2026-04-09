@@ -1,31 +1,26 @@
+import babel from '@rolldown/plugin-babel';
 import tailwindcss from '@tailwindcss/vite';
-import react from '@vitejs/plugin-react';
-import { visualizer } from 'rollup-plugin-visualizer';
+import react, { reactCompilerPreset } from '@vitejs/plugin-react';
 import { defineConfig } from 'vite';
 
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [
-    react({
-      babel: {
-        plugins: ['babel-plugin-react-compiler']
-      }
+    react(),
+    babel({
+      presets: [reactCompilerPreset()]
     }),
-    tailwindcss(),
-    visualizer({
-      open: true,
-      gzipSize: true,
-      brotliSize: true,
-      sourcemap: true,
-      emitFile: true,
-      title: 'Bundle Analysis',
-      filename: 'dist/bundle-report.html'
-    })
+    tailwindcss()
   ],
-  resolve: {
-    alias: {
-      '@': '/src'
+  server: {
+    port: 5173,
+    forwardConsole: {
+      unhandledErrors: true,
+      logLevels: ['error', 'warn']
     }
+  },
+  resolve: {
+    tsconfigPaths: true
   },
   build: {
     sourcemap: true
