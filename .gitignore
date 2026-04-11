@@ -12,6 +12,14 @@ dist
 dist-ssr
 *.local
 
+# testing
+/coverage
+/playwright-report/
+/tests/e2e/.results/
+/tests/e2e/.auth/
+/blob-report/
+.playwright-mcp
+
 # Editor directories and files
 !.vscode/extensions.json
 .idea
@@ -21,3 +29,10 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# env files (can opt-in for committing if needed)
+.env*
+
+# prompts
+.agents
+skills-lock.json

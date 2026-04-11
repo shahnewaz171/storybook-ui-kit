@@ -1,5 +1,5 @@
 {
-  "$schema": "https://biomejs.dev/schemas/2.4.10/schema.json",
+  "$schema": "https://biomejs.dev/schemas/2.4.11/schema.json",
   "vcs": {
     "enabled": true,
     "clientKind": "git",
@@ -144,17 +144,15 @@
           "level": "on",
           "options": {
             "groups": [
-              ":URL:",
-              ":NODE:",
-              ":BUN:",
-              ":PACKAGE_WITH_PROTOCOL:",
-              ":PACKAGE:",
-              "@/**",
-              ":ALIAS:",
-              "src/**",
-              "../*",
-              "./*",
-              ":INDEX:"
+              [":URL:", ":NODE:", ":BUN:", ":PACKAGE_WITH_PROTOCOL:", ":PACKAGE:"],
+              ":BLANK_LINE:",
+              ["@/lib/**"],
+              ["@/hooks/**"],
+              ["@/components/**"],
+              ["@/features/**"],
+              ["@/**", ":ALIAS:", "src/**"],
+              ":BLANK_LINE:",
+              ["../**", "./**"]
             ]
           }
         }

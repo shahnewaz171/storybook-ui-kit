@@ -1,4 +1,7 @@
-import type { CustomIconProps } from '@/components/types/Icon';
+interface CustomIconProps {
+  width?: number;
+  height?: number;
+}
 
 const CustomIcon = ({ width = 100, height = 100 }: CustomIconProps) => (
   <svg width={width} height={height}>

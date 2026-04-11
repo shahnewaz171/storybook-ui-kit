@@ -1,6 +1,7 @@
 import { Outlet } from 'react-router';
-import Footer from '@/layouts/Footer';
-import Navbar from '@/layouts/Navbar';
+
+import Footer from '@/components/layouts/Footer';
+import Navbar from '@/components/layouts/Navbar';
 
 const PrivateLayout = () => (
   <div className="min-h-screen flex flex-col">

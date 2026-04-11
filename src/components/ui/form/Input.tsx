@@ -1,5 +1,6 @@
 import { type DetailedHTMLProps, type InputHTMLAttributes, memo } from 'react';
-import { cn } from '@/utils';
+
+import cn from '@/utils/cn';
 
 interface InputProps
   extends DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement> {

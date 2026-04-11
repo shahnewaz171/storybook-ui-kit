@@ -1,5 +1,6 @@
 import type { ButtonHTMLAttributes, DetailedHTMLProps, ReactNode } from 'react';
-import { cn } from '@/utils';
+
+import cn from '@/utils/cn';
 
 const variantClasses = {
   primary: 'bg-blue-600 hover:bg-blue-700',

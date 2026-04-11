@@ -1,5 +1,6 @@
 import { Outlet } from 'react-router';
-import Footer from '@/layouts/Footer';
+
+import Footer from '@/components/layouts/Footer';
 
 const PublicLayout = () => (
   <div className="min-h-screen flex flex-col">
@@ -9,7 +10,7 @@ const PublicLayout = () => (
       </div>
     </header>
 
-    <main className="flex-grow container mx-auto p-4">
+    <main className="grow container mx-auto p-4">
       {/* child routes render here */}
       <Outlet />
     </main>
