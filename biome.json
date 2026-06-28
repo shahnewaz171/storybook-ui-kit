@@ -1,5 +1,5 @@
 {
-  "$schema": "https://biomejs.dev/schemas/2.4.11/schema.json",
+  "$schema": "https://biomejs.dev/schemas/2.5.1/schema.json",
   "vcs": {
     "enabled": true,
     "clientKind": "git",
@@ -28,26 +28,21 @@
   "linter": {
     "enabled": true,
     "rules": {
-      "recommended": true,
+      "preset": "recommended",
       "correctness": {
-        "useJsxKeyInIterable": "error",
         "noUndeclaredDependencies": "off",
-        "noUnknownProperty": "error",
         "noUnresolvedImports": "off",
         "noUnusedImports": "error",
         "noUnusedVariables": "error",
         "useExhaustiveDependencies": "warn",
-        "useHookAtTopLevel": "error",
         "useParseIntRadix": "error",
         "noUnusedLabels": "error",
-        "noUnreachable": "error",
         "noUndeclaredVariables": "off"
       },
       "style": {
         "useConst": "error",
         "useTemplate": "error",
         "useShorthandFunctionType": "error",
-        "noNonNullAssertion": "warn",
         "noParameterAssign": "error",
         "useNumberNamespace": "error",
         "useExponentiationOperator": "error",
@@ -67,29 +62,28 @@
         "useCollapsedElseIf": "error",
         "useArrayLiterals": "error",
         "useDefaultSwitchClause": "error",
-        "useConsistentArrowReturn": "error"
+        "useConsistentArrowReturn": "error",
+        "noTernary": "off",
+        "noIncrementDecrement": "error",
+        "noContinue": "error"
       },
       "suspicious": {
-        "noDoubleEquals": "error",
-        "noExplicitAny": "warn",
         "noArrayIndexKey": "warn",
         "noConsole": "off",
         "noEmptyBlockStatements": "error",
-        "noRedeclare": "error",
         "useAwait": "off",
         "noConfusingVoidType": "error",
-        "noWith": "error",
         "noVar": "error",
         "noPrototypeBuiltins": "error",
         "noAlert": "warn",
         "useGuardForIn": "error",
         "useDefaultSwitchClauseLast": "error",
-        "noDuplicateAtImportRules": "error",
-        "useIterableCallbackReturn": "error",
         "noIrregularWhitespace": "error",
         "noUselessEscapeInString": "error",
         "noImportCycles": "error",
-        "noUnusedExpressions": "error"
+        "noUnusedExpressions": "error",
+        "noProto": "error",
+        "noShadow": "error"
       },
       "complexity": {
         "noForEach": "off",
@@ -127,13 +121,6 @@
       },
       "security": {
         "noDangerouslySetInnerHtml": "warn"
-      },
-      "nursery": {
-        "noProto": "error",
-        "noTernary": "off",
-        "noShadow": "error",
-        "noIncrementDecrement": "error",
-        "noContinue": "error"
       }
     }
   },
