@@ -20,6 +20,22 @@ const preview: Preview = {
     )
   ],
   parameters: {
+    options: {
+      storySort: {
+        order: [
+          'Configure your project',
+          'Welcome',
+          'Components',
+          'Transitions',
+          'Layout',
+          'Overlays',
+          'Units',
+          'Forms',
+          'Widget',
+          '*'
+        ]
+      }
+    },
     controls: {
       matchers: {
         color: /(background|color)$/i,
@@ -32,6 +48,9 @@ const preview: Preview = {
       // 'off' - skip a11y checks entirely
       test: 'todo'
     }
+  },
+  initialGlobals: {
+    theme: 'light'
   }
 };
 

@@ -1,6 +1,6 @@
 import { isRouteErrorResponse, useRouteError } from 'react-router';
 
-import Button from '@/components/ui/Button';
+import Button from '@/ui/components/button/Button';
 
 const ErrorBoundary = () => {
   const error: unknown = useRouteError();

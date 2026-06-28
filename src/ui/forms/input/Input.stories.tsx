@@ -20,7 +20,7 @@ const StatefulInput = (args: ComponentProps<typeof Input>) => {
 };
 
 const meta = {
-  title: 'UI/Input',
+  title: 'Forms/Input',
   component: Input,
   parameters: {
     layout: 'centered'
