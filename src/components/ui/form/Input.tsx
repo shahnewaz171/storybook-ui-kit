@@ -27,7 +27,7 @@ const Input = ({
 }: InputProps) => (
   <div className={cn('mb-4', className)}>
     {label && (
-      <label htmlFor={name} className="block font-semibold mb-1">
+      <label htmlFor={name} className="block font-semibold mb-1 text-foreground">
         {label}
       </label>
     )}
@@ -42,14 +42,14 @@ const Input = ({
       aria-invalid={!!error}
       aria-describedby={error ? `${name}-error` : undefined}
       className={cn(
-        'w-full border px-3 py-2 rounded outline-none transition',
-        error && 'border-red-500'
+        'w-full border border-input bg-background px-3 py-2 rounded-(--radius) text-foreground outline-none transition-colors placeholder:text-muted-foreground focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background disabled:cursor-not-allowed disabled:opacity-50',
+        error && 'border-destructive focus-visible:ring-destructive'
       )}
       {...props}
     />
 
     {error && (
-      <p id={`${name}-error`} className="text-red-500 text-sm mt-1">
+      <p id={`${name}-error`} className="text-destructive text-sm mt-1">
         {error}
       </p>
     )}

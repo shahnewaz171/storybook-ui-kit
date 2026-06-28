@@ -1,8 +1,24 @@
+import { withThemeByDataAttribute } from '@storybook/addon-themes';
 import type { Preview } from '@storybook/react-vite';
 
 import '../src/storybook-setup.ts';
 
 const preview: Preview = {
+  decorators: [
+    withThemeByDataAttribute({
+      themes: {
+        light: 'light',
+        dark: 'dark'
+      },
+      defaultTheme: 'light',
+      attributeName: 'data-theme'
+    }),
+    (Story) => (
+      <div className="bg-background text-foreground p-6 min-h-30">
+        <Story />
+      </div>
+    )
+  ],
   parameters: {
     controls: {
       matchers: {

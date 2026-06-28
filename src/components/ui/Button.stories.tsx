@@ -13,7 +13,7 @@ const meta = {
   argTypes: {
     variant: {
       control: 'inline-radio',
-      options: ['primary', 'secondary']
+      options: ['primary', 'secondary', 'destructive', 'outline', 'ghost', 'link']
     },
     disabled: { control: 'boolean' }
   },
@@ -36,6 +36,32 @@ export const Primary: Story = {
 export const Secondary: Story = {
   args: {
     variant: 'secondary'
+  }
+};
+
+export const Destructive: Story = {
+  args: {
+    variant: 'destructive',
+    children: 'Delete'
+  }
+};
+
+export const Outline: Story = {
+  args: {
+    variant: 'outline'
+  }
+};
+
+export const Ghost: Story = {
+  args: {
+    variant: 'ghost'
+  }
+};
+
+export const Link: Story = {
+  args: {
+    variant: 'link',
+    children: 'Learn more'
   }
 };
 
