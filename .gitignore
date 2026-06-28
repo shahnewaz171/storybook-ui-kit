@@ -6,6 +6,7 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
+.pnpm-store
 
 node_modules
 dist
@@ -19,6 +20,10 @@ dist-ssr
 /tests/e2e/.auth/
 /blob-report/
 .playwright-mcp
+
+# storybook
+*storybook.log
+storybook-static
 
 # Editor directories and files
 !.vscode/extensions.json
