@@ -2,6 +2,7 @@ import { withThemeByDataAttribute } from '@storybook/addon-themes';
 import type { Preview } from '@storybook/react-vite';
 
 import '../src/storybook-setup.ts';
+import { themes } from 'storybook/theming';
 
 const preview: Preview = {
   decorators: [
@@ -20,6 +21,9 @@ const preview: Preview = {
     )
   ],
   parameters: {
+    docs: {
+      theme: themes.light
+    },
     options: {
       storySort: {
         order: [
@@ -48,9 +52,6 @@ const preview: Preview = {
       // 'off' - skip a11y checks entirely
       test: 'todo'
     }
-  },
-  initialGlobals: {
-    theme: 'light'
   }
 };
 
