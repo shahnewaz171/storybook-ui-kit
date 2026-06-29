@@ -31,7 +31,7 @@ Components · Transitions · Layout · Overlays · Units · Forms · Charts · W
 ```bash
 pnpm dev              # Vite app
 pnpm storybook        # Storybook on :6006
-pnpm build:storybook  # Static build
+pnpm build-storybook  # Static build
 pnpm test:storybook   # Component tests (Playwright)
 pnpm lint             # Biome
 ```
