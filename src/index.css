@@ -3,130 +3,130 @@
 @custom-variant dark (&:where([data-theme='dark'], [data-theme='dark'] *));
 
 @theme {
-  --color-background: var(--sn-background);
-  --color-foreground: var(--sn-foreground);
-  --color-card: var(--sn-card);
-  --color-card-foreground: var(--sn-card-foreground);
-  --color-popover: var(--sn-popover);
-  --color-popover-foreground: var(--sn-popover-foreground);
-  --color-primary: var(--sn-primary);
-  --color-primary-foreground: var(--sn-primary-foreground);
-  --color-secondary: var(--sn-secondary);
-  --color-secondary-foreground: var(--sn-secondary-foreground);
-  --color-muted: var(--sn-muted);
-  --color-muted-foreground: var(--sn-muted-foreground);
-  --color-accent: var(--sn-accent);
-  --color-accent-foreground: var(--sn-accent-foreground);
-  --color-destructive: var(--sn-destructive);
-  --color-destructive-foreground: var(--sn-destructive-foreground);
-  --color-border: var(--sn-border);
-  --color-input: var(--sn-input);
-  --color-ring: var(--sn-ring);
-  --color-success: var(--sn-success);
-  --color-success-foreground: var(--sn-success-foreground);
-  --color-warning: var(--sn-warning);
-  --color-warning-foreground: var(--sn-warning-foreground);
-  --color-info: var(--sn-info);
-  --color-info-foreground: var(--sn-info-foreground);
+  --color-background: var(--sui-background);
+  --color-foreground: var(--sui-foreground);
+  --color-card: var(--sui-card);
+  --color-card-foreground: var(--sui-card-foreground);
+  --color-popover: var(--sui-popover);
+  --color-popover-foreground: var(--sui-popover-foreground);
+  --color-primary: var(--sui-primary);
+  --color-primary-foreground: var(--sui-primary-foreground);
+  --color-secondary: var(--sui-secondary);
+  --color-secondary-foreground: var(--sui-secondary-foreground);
+  --color-muted: var(--sui-muted);
+  --color-muted-foreground: var(--sui-muted-foreground);
+  --color-accent: var(--sui-accent);
+  --color-accent-foreground: var(--sui-accent-foreground);
+  --color-destructive: var(--sui-destructive);
+  --color-destructive-foreground: var(--sui-destructive-foreground);
+  --color-border: var(--sui-border);
+  --color-input: var(--sui-input);
+  --color-ring: var(--sui-ring);
+  --color-success: var(--sui-success);
+  --color-success-foreground: var(--sui-success-foreground);
+  --color-warning: var(--sui-warning);
+  --color-warning-foreground: var(--sui-warning-foreground);
+  --color-info: var(--sui-info);
+  --color-info-foreground: var(--sui-info-foreground);
 
-  --radius: var(--sn-radius);
+  --radius: var(--sui-radius);
 }
 
 @layer base {
   /* Light Mode */
   :root,
   [data-theme='light'] {
-    --sn-background: oklch(1 0 0);
-    --sn-foreground: oklch(0.205 0.032 264.5);
+    --sui-background: oklch(1 0 0);
+    --sui-foreground: oklch(0.205 0.032 264.5);
 
-    --sn-card: oklch(1 0 0);
-    --sn-card-foreground: oklch(0.205 0.032 264.5);
+    --sui-card: oklch(1 0 0);
+    --sui-card-foreground: oklch(0.205 0.032 264.5);
 
-    --sn-popover: oklch(1 0 0);
-    --sn-popover-foreground: oklch(0.205 0.032 264.5);
+    --sui-popover: oklch(1 0 0);
+    --sui-popover-foreground: oklch(0.205 0.032 264.5);
 
-    --sn-primary: oklch(0.623 0.214 260);
-    --sn-primary-foreground: oklch(0.98 0.005 260);
+    --sui-primary: oklch(0.623 0.214 260);
+    --sui-primary-foreground: oklch(0.98 0.005 260);
 
-    --sn-secondary: oklch(0.97 0.01 260);
-    --sn-secondary-foreground: oklch(0.205 0.032 264.5);
+    --sui-secondary: oklch(0.97 0.01 260);
+    --sui-secondary-foreground: oklch(0.205 0.032 264.5);
 
-    --sn-muted: oklch(0.97 0.01 260);
-    --sn-muted-foreground: oklch(0.55 0.04 260);
+    --sui-muted: oklch(0.97 0.01 260);
+    --sui-muted-foreground: oklch(0.55 0.04 260);
 
-    --sn-accent: oklch(0.97 0.01 260);
-    --sn-accent-foreground: oklch(0.205 0.032 264.5);
+    --sui-accent: oklch(0.97 0.01 260);
+    --sui-accent-foreground: oklch(0.205 0.032 264.5);
 
-    --sn-destructive: oklch(0.62 0.22 28);
-    --sn-destructive-foreground: oklch(0.98 0 0);
+    --sui-destructive: oklch(0.62 0.22 28);
+    --sui-destructive-foreground: oklch(0.98 0 0);
 
-    --sn-border: oklch(0.92 0.015 260);
-    --sn-input: oklch(0.92 0.015 260);
-    --sn-ring: oklch(0.623 0.214 260);
+    --sui-border: oklch(0.92 0.015 260);
+    --sui-input: oklch(0.92 0.015 260);
+    --sui-ring: oklch(0.623 0.214 260);
 
-    --sn-success: oklch(0.53 0.17 142);
-    --sn-success-foreground: oklch(0.98 0 0);
-    --sn-warning: oklch(0.7 0.19 55);
-    --sn-warning-foreground: oklch(0.95 0.07 55);
-    --sn-info: oklch(0.6 0.18 236);
-    --sn-info-foreground: oklch(0.98 0.005 260);
+    --sui-success: oklch(0.53 0.17 142);
+    --sui-success-foreground: oklch(0.98 0 0);
+    --sui-warning: oklch(0.7 0.19 55);
+    --sui-warning-foreground: oklch(0.95 0.07 55);
+    --sui-info: oklch(0.6 0.18 236);
+    --sui-info-foreground: oklch(0.98 0.005 260);
 
-    --sn-gradient-start: oklch(0.623 0.214 260);
-    --sn-gradient-end: oklch(0.65 0.25 290);
-    --sn-radius: 0.5rem;
+    --sui-gradient-start: oklch(0.623 0.214 260);
+    --sui-gradient-end: oklch(0.65 0.25 290);
+    --sui-radius: 0.5rem;
   }
 
   /* Dark Mode */
   [data-theme='dark'] {
-    --sn-background: oklch(0.14 0.04 264.5);
-    --sn-foreground: oklch(0.98 0.005 260);
+    --sui-background: oklch(0.14 0.04 264.5);
+    --sui-foreground: oklch(0.98 0.005 260);
 
-    --sn-card: oklch(0.14 0.04 264.5);
-    --sn-card-foreground: oklch(0.98 0.005 260);
+    --sui-card: oklch(0.14 0.04 264.5);
+    --sui-card-foreground: oklch(0.98 0.005 260);
 
-    --sn-popover: oklch(0.14 0.04 264.5);
-    --sn-popover-foreground: oklch(0.98 0.005 260);
+    --sui-popover: oklch(0.14 0.04 264.5);
+    --sui-popover-foreground: oklch(0.98 0.005 260);
 
-    --sn-primary: oklch(0.70 0.20 260);
-    --sn-primary-foreground: oklch(0.205 0.032 264.5);
+    --sui-primary: oklch(0.70 0.20 260);
+    --sui-primary-foreground: oklch(0.205 0.032 264.5);
 
-    --sn-secondary: oklch(0.27 0.05 260);
-    --sn-secondary-foreground: oklch(0.98 0.005 260);
+    --sui-secondary: oklch(0.27 0.05 260);
+    --sui-secondary-foreground: oklch(0.98 0.005 260);
 
-    --sn-muted: oklch(0.27 0.05 260);
-    --sn-muted-foreground: oklch(0.70 0.04 260);
+    --sui-muted: oklch(0.27 0.05 260);
+    --sui-muted-foreground: oklch(0.70 0.04 260);
 
-    --sn-accent: oklch(0.27 0.05 260);
-    --sn-accent-foreground: oklch(0.98 0.005 260);
+    --sui-accent: oklch(0.27 0.05 260);
+    --sui-accent-foreground: oklch(0.98 0.005 260);
 
-    --sn-destructive: oklch(0.45 0.18 28);
-    --sn-destructive-foreground: oklch(0.98 0 0);
+    --sui-destructive: oklch(0.45 0.18 28);
+    --sui-destructive-foreground: oklch(0.98 0 0);
 
-    --sn-border: oklch(0.27 0.05 260);
-    --sn-input: oklch(0.27 0.05 260);
-    --sn-ring: oklch(0.55 0.20 260);
+    --sui-border: oklch(0.27 0.05 260);
+    --sui-input: oklch(0.27 0.05 260);
+    --sui-ring: oklch(0.55 0.20 260);
 
-    --sn-success: oklch(0.60 0.15 142);
-    --sn-success-foreground: oklch(0.14 0.04 142);
-    --sn-warning: oklch(0.7 0.19 55);
-    --sn-warning-foreground: oklch(0.95 0.07 55);
-    --sn-info: oklch(0.6 0.18 236);
-    --sn-info-foreground: oklch(0.98 0.005 260);
+    --sui-success: oklch(0.60 0.15 142);
+    --sui-success-foreground: oklch(0.14 0.04 142);
+    --sui-warning: oklch(0.7 0.19 55);
+    --sui-warning-foreground: oklch(0.95 0.07 55);
+    --sui-info: oklch(0.6 0.18 236);
+    --sui-info-foreground: oklch(0.98 0.005 260);
 
-    --sn-gradient-start: oklch(0.70 0.20 260);
-    --sn-gradient-end: oklch(0.75 0.24 290);
-    --sn-radius: 0.5rem;
+    --sui-gradient-start: oklch(0.70 0.20 260);
+    --sui-gradient-end: oklch(0.75 0.24 290);
+    --sui-radius: 0.5rem;
   }
 }
 
 @layer base {
   * {
-    border-color: var(--sn-border);
+    border-color: var(--sui-border);
   }
 
   body {
-    background-color: var(--sn-background);
-    color: var(--sn-foreground);
+    background-color: var(--sui-background);
+    color: var(--sui-foreground);
     font-feature-settings: 'rlig' 1, 'calt' 1;
        /* Transition removed to prevent color skewing/flashing during theme switch? 
        Actually user complained about flickering, but transition can mask it or make it worse.
@@ -206,23 +206,23 @@
   }
 
   ::-webkit-scrollbar-track {
-    background-color: var(--sn-muted);
+    background-color: var(--sui-muted);
   }
 
   ::-webkit-scrollbar-thumb {
-    background-color: color-mix(in srgb, var(--sn-muted-foreground), transparent 70%);
+    background-color: color-mix(in srgb, var(--sui-muted-foreground), transparent 70%);
     border-radius: 9999px;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background-color: color-mix(in srgb, var(--sn-muted-foreground), transparent 50%);
+    background-color: color-mix(in srgb, var(--sui-muted-foreground), transparent 50%);
   }
 }
 
 @layer utilities {
     /* Text gradients */
   .text-gradient {
-    background-image: linear-gradient(to right, var(--sn-gradient-start), var(--sn-gradient-end));
+    background-image: linear-gradient(to right, var(--sui-gradient-start), var(--sui-gradient-end));
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;

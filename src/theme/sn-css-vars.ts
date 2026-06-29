@@ -1,4 +1,4 @@
-export const snVar = (token: string) => `var(--sn-${token})`;
+export const snVar = (token: string) => `var(--sui-${token})`;
 
 export type SnTokenName =
   | 'background'
@@ -50,7 +50,7 @@ const readRawToken = (token: SnTokenName, target?: Element): string => {
   }
 
   return getComputedStyle(target ?? document.documentElement)
-    .getPropertyValue(`--sn-${token}`)
+    .getPropertyValue(`--sui-${token}`)
     .trim();
 };
 

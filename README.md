@@ -1,6 +1,6 @@
 # Storybook UI Kit
 
-React 19 component library documented in Storybook. Tailwind CSS 4 design tokens (`--sn-*`) power most components; MUI is used only for Dialog and Select.
+React 19 component library documented in Storybook. Tailwind CSS 4 design tokens (`--sui-*`) power most components; MUI is used only for Dialog and Select.
 
 ## Tech stack
 
@@ -17,7 +17,7 @@ src/
 ├── ui/                 # Design-system components + stories
 ├── theme/              # CSS-var bridge for MUI (sn-css-vars, mui-theme)
 ├── providers/          # MuiThemeProvider
-├── index.css           # --sn-* tokens (light / dark via data-theme)
+├── index.css           # --sui-* tokens (light / dark via data-theme)
 └── storybook-setup.ts
 
 .storybook/             # Storybook config
@@ -40,5 +40,5 @@ pnpm lint             # Biome
 ## Theming
 
 - **Preview canvas:** use the Storybook **Theme** toolbar (light / dark via `data-theme`).
-- **Tokens:** edit `--sn-*` variables in `src/index.css`.
+- **Tokens:** edit `--sui-*` variables in `src/index.css`.
 - **MUI:** reads resolved CSS variables at runtime; complex components stay in sync with the preview theme.

@@ -9,9 +9,9 @@ const CustomIcon = ({ width = 100, height = 100 }: CustomIconProps) => (
       cx="50"
       cy="50"
       r="40"
-      stroke="var(--sn-success)"
+      stroke="var(--sui-success)"
       strokeWidth="4"
-      fill="var(--sn-warning)"
+      fill="var(--sui-warning)"
     />
   </svg>
 );
