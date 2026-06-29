@@ -1,8 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
 import { type ComponentProps, useState } from 'react';
 
-import MuiThemeProvider from '@/providers/MuiThemeProvider';
-
 import Select from './Select';
 
 const options = [
@@ -30,13 +28,6 @@ const meta = {
     layout: 'centered'
   },
   tags: ['autodocs'],
-  decorators: [
-    (Story, { globals }) => (
-      <MuiThemeProvider mode={globals.theme === 'dark' ? 'dark' : 'light'}>
-        <Story />
-      </MuiThemeProvider>
-    )
-  ],
   args: {
     label: 'Department',
     name: 'department',

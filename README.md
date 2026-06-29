@@ -1,13 +1,13 @@
 # Storybook UI Kit
 
-React 19 component library documented in Storybook. Tailwind CSS 4 design tokens (`--sui-*`) power most components; MUI is used only for Dialog and Select.
+React 19 component library documented in Storybook. Tailwind CSS 4 design tokens (`--sui-*`) power all components, including Dialog and Select built on Base UI.
 
 ## Tech stack
 
 - React 19, TypeScript, Vite 8
 - Tailwind CSS 4 (`src/index.css`)
 - Storybook 10 (Vitest browser tests, a11y, docs, onboarding)
-- MUI 9 + Emotion (Dialog, Select only)
+- Base UI (`@base-ui/react`) for Dialog and Select
 - Biome, Husky
 
 ## Structure
@@ -15,8 +15,6 @@ React 19 component library documented in Storybook. Tailwind CSS 4 design tokens
 ```
 src/
 ├── ui/                 # Design-system components + stories
-├── theme/              # CSS-var bridge for MUI (sn-css-vars, mui-theme)
-├── providers/          # MuiThemeProvider
 ├── index.css           # --sui-* tokens (light / dark via data-theme)
 └── storybook-setup.ts
 
@@ -32,7 +30,7 @@ Components · Transitions · Layout · Overlays · Units · Forms · Widget
 ```bash
 pnpm dev              # Vite app
 pnpm storybook        # Storybook on :6006
-pnpm build-storybook  # Static build
+pnpm build:storybook  # Static build
 pnpm test:storybook   # Component tests (Playwright)
 pnpm lint             # Biome
 ```
@@ -40,5 +38,4 @@ pnpm lint             # Biome
 ## Theming
 
 - **Preview canvas:** use the Storybook **Theme** toolbar (light / dark via `data-theme`).
-- **Tokens:** edit `--sui-*` variables in `src/index.css`.
-- **MUI:** reads resolved CSS variables at runtime; complex components stay in sync with the preview theme.
+- **Tokens:** edit `--sui-*` variables in `src/index.css`. Base UI components use the same Tailwind token utilities as the rest of the kit.
