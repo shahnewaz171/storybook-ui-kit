@@ -35,6 +35,8 @@ const preview: Preview = {
           'Overlays',
           'Units',
           'Forms',
+          'Charts',
+          ['BarChart', 'LineChart', 'AreaChart'],
           'Widget',
           '*'
         ]

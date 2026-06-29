@@ -8,6 +8,7 @@ React 19 component library documented in Storybook. Tailwind CSS 4 design tokens
 - Tailwind CSS 4 (`src/index.css`)
 - Storybook 10 (Vitest browser tests, a11y, docs, onboarding)
 - Base UI (`@base-ui/react`) for Dialog and Select
+- Recharts (Charts), Tiptap (Editor)
 - Biome, Husky
 
 ## Structure
@@ -23,7 +24,7 @@ src/
 
 ## Story categories
 
-Components · Transitions · Layout · Overlays · Units · Forms · Widget
+Components · Transitions · Layout · Overlays · Units · Forms · Charts · Widget
 
 ## Scripts
 
